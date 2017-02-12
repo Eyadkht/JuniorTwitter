@@ -14,6 +14,9 @@ namespace Shared
          void SendServerCost(ServerInformation s);  
             
          String SelectBestServer();
+
+         int getServerCostById(int id);
+         int[] ServersCost();
     }
 
 
@@ -22,8 +25,7 @@ namespace Shared
     {
        public string serverName;
        public double CpuUsage;
-       public double AvailableRam;
-                
+       public double AvailableRam;                
     }
 
     
