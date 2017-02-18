@@ -1,0 +1,167 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> Realtime Statistics </h2>
+
+
+<!-- ============================================================== -->
+<!-- Start right Content here -->
+<!-- ============================================================== -->
+
+
+<script type="text/javascript">
+
+    setInterval(function () {
+        
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: "/Statistics/AjaxAction",
+            data: {
+                firstName: "Johny",
+                lastName: "Cage",
+            },
+            success: function (data) {
+
+                response = data;
+                console.log(response);
+                var obj = JSON.parse(response);
+               var cpu1 = obj.Server1CPU;
+                var cpu2 = obj.Server2CPU;
+                var cpu3 = obj.Server3CPU;
+
+                var ram1 = obj.Server1Ram;
+                var ram2 = obj.Server2Ram;
+                var ram3 = obj.Server3Ram;
+
+               // alert(cpu1);
+                $("#Server1CPUValue").text(cpu1 + "%");             
+                $("#Server1CPUValue1").width(cpu1 + "%");
+
+                $("#Server2CPUValue").text(cpu2 + "%");
+                $("#Server2CPUValue1").width(cpu2 + "%");
+
+                $("#Server3CPUValue").text(cpu3 + "%");
+                $("#Server3CPUValue1").width(cpu3 + "%");
+               
+
+                $("#Server1RamValue").text(ram1);
+                $("#Server2RamValue").text(ram2);
+                $("#Server3RamValue").text(ram3);
+            },
+        });
+
+
+
+    }, 1000);
+
+</script>
+
+
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="pull-left page-title">Servers</h4>
+                    <ol class="breadcrumb pull-right">
+                        <li><a href="#">Statistics</a></li>
+                        <li><a href="#">Servers </a></li>                       
+                    </ol>
+                </div>
+            </div>
+            
+       <div class="row text-center">
+                                <div class="col-md-6 col-sm-6 col-lg-4">
+                                    <div class="mini-stat clearfix bx-shadow">
+                                       
+                                        <div class="tiles-progress">
+                                            <div class="m-t-20">
+                                                <h5 class="text-uppercase">Server 1 <span class="pull-right" id="Server1CPUValue">0</span></h5>
+                                                <div class="progress progress-sm m-0">
+                                                    <div  class="progress-bar progress-bar-warning" role="progressbar" id="Server1CPUValue1" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                                                        <span class="sr-only" id="Server1CPUValue2">90% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-lg-4">
+                                    <div class="mini-stat clearfix bx-shadow">
+                                        
+                                        <div class="tiles-progress">
+                                            <div class="m-t-20">
+                                                <h5 class="text-uppercase">Server 2 <span class="pull-right" id="Server2CPUValue">0</span></h5>
+                                                <div class="progress progress-sm m-0">
+                                                    <div class="progress-bar progress-bar-pink" role="progressbar" id="Server2CPUValue1" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%;">
+                                                        <span class="sr-only" id="Server2CPUValue2">57% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-lg-4">
+                                    <div class="mini-stat clearfix bx-shadow">
+                                       
+                                        <div class="tiles-progress">
+                                            <div class="m-t-20">
+                                                <h5 class="text-uppercase">Server 3 <span class="pull-right" id="Server3CPUValue">0</span></h5>
+                                                <div class="progress progress-sm m-0">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar"  id="Server3CPUValue1"  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                        <span class="sr-only" id="Server3CPUValue2">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                                        
+
+                            <div class="col-md-6 col-sm-6 col-lg-4">
+                                <div class="panel panel-border panel-purple widget-s-1">
+                                    <div class="panel-heading"> </div>
+                                    <div class="panel-body">
+                                        <div class="h2 text-purple" id="Server1RamValue">15852</div>
+                                        <span class="text-muted">Server 1 Ram</span>
+                                       
+                                </div>
+                                </div>
+                            </div>
+                                    
+                            <div class="col-md-6 col-sm-6 col-lg-4">
+                                <div class="panel panel-border panel-pink widget-s-1">
+                                    <div class="panel-heading"> </div>
+                                    <div class="panel-body">
+                                    <div class="h2 text-pink" id="Server2RamValue">956</div>
+                                    <span class="text-muted">Server 2 Ram</span>
+                                   
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-lg-4">
+                                <div class="panel panel-border panel-primary widget-s-1">
+                                    <div class="panel-heading"> </div>
+                                    <div class="panel-body">
+                                    <div class="h2 text-primary" id="Server3RamValue">5210</div>
+                                    <span class="text-muted">Server 3 Ram</span>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                                    
+                          
+
+</div>
+                        <!--Widget-4 -->
+                        
+                        
+<!-- End row-->       
+
+<!-- ============================================================== -->
+<!-- End Right content here -->
+<!-- ============================================================== -->
+
+

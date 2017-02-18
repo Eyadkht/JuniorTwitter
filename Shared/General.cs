@@ -15,8 +15,10 @@ namespace Shared
             
          String SelectBestServer();
 
-         int getServerCostById(int id);
-         int[] ServersCost();
+         int [] getServerCostById(int id);
+         int[] CpuServersCost();
+
+         int[] availableRamCost();
     }
 
 

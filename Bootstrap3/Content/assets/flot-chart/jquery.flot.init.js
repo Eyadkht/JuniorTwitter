@@ -120,32 +120,52 @@
 
     //returns some random data
     FlotChart.prototype.randomData = function() {
-        var totalPoints = 300;
-        if (this.$realData.length > 0)
-            this.$realData = this.$realData.slice(1);
+      var response;
 
-      // Do a random walk
-      while (this.$realData.length < totalPoints) {
+     var cpu1=4;
+       
+      $.ajax({
+                type: "post",
+                dataType: "json",
+                url: "/Statistics/AjaxAction",
+                data: {
+                    firstName: "Johny",
+                    lastName: "Cage",
+                },                
+                success: function (data) {
+                    
+                    response = data;
+                    console.log(response);
+                    var obj=JSON.parse(response);
+                    cpu1= obj.Server1CPU;
+                },
+            });
 
-        var prev = this.$realData.length > 0 ? this.$realData[this.$realData.length - 1] : 50,
-          y = prev + Math.random() * 10 - 5;
+              var totalPoints = 300;
+              if (this.$realData.length > 0)
+                  this.$realData = this.$realData.slice(1);
 
-        if (y < 0) {
-          y = 0;
-        } else if (y > 100) {
-          y = 100;
-        }
+            // Do a random walk
+            while (this.$realData.length < totalPoints) {
+ 
+              var prev = this.$realData.length > 0 ? this.$realData[this.$realData.length - 1] :cpu1,
+                y =  prev +cpu1 ;
 
-        this.$realData.push(y);
-      }
+              if (y < 0) {
+                y = 0;
+              } else if (y > 100) {
+                y = 100;
+              }
 
-      // Zip the generated y values with the x values
-      var res = [];
-      for (var i = 0; i < this.$realData.length; ++i) {
-        res.push([i, this.$realData[i]])
-      }
+              this.$realData.push(y);
+            }
 
-      return res;
+            // Zip the generated y values with the x values
+            var res = [];
+            for (var i = 0; i < this.$realData.length; ++i) {
+              res.push([i, this.$realData[i]])
+            }
+            return res;
     },
 
     FlotChart.prototype.createRealTimeGraph = function(selector, data, colors) {
@@ -288,7 +308,7 @@
     },
 
         //initializing various charts and components
-        FlotChart.prototype.init = function() {
+    FlotChart.prototype.init = function() {
           //plot graph data
           var uploads = [[0, 9], [1, 8], [2, 5], [3, 8], [4, 5], [5, 14], [6, 10]];
           var downloads = [[0, 5], [1, 12], [2,4], [3, 3], [4, 12], [5, 11], [6, 14]];
@@ -313,7 +333,7 @@
                 plot.setData([$this.randomData()]);
                 // Since the axes don't change, we don't need to call plot.setupGrid()
                 plot.draw(); 
-                setTimeout(updatePlot, $( 'html' ).hasClass( 'mobile-device' ) ? 1000 : 30);
+                setTimeout(updatePlot, $( 'html' ).hasClass( 'mobile-device' ) ? 1000 : 1000);
             }
             updatePlot();
 

@@ -66,6 +66,34 @@ namespace RemotingServer
                 return Array.IndexOf(array, min);
             }
 
+            public int[] getServerCostById(int id)
+            {
+               if (id == 1)
+                {
+                    return new int[] { (int) S1.CpuUsage, (int)S1.AvailableRam };
+                }
+               else if( id==2)
+                {
+                    return new int[] { (int)S2.CpuUsage, (int)S2.AvailableRam };
+                }
+               else if ( id==3)
+                {
+                    return new int[] { (int)S3.CpuUsage, (int)S3.AvailableRam };
+                }
+
+                return new int[] { -1, -1 };
+            }
+
+            
+            public int[] CpuServersCost()
+            {
+                return new int[] { (int)S1.CpuUsage, (int)S2.CpuUsage, (int)S3.CpuUsage };
+            }
+
+            public int[] availableRamCost()
+            {
+                return new int[] { (int)S1.AvailableRam, (int)S2.AvailableRam, (int)S3.AvailableRam };
+            }
 
         }
 

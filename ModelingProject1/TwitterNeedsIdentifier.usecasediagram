@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="2806f14e-7c50-425a-a60f-e2ef6b0d869f" name="TwitterNeedsIdentifier" linkedPackageId="e9a86a57-0de3-4c4a-b545-0898f4b453d1" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="06e8be50-a564-4593-82a4-8761edfb2748">
+      <profileInstance Id="ee949ae2-bd37-413b-a4ed-92012a5f4b39" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e9093b94-7ee2-441f-9902-e52e507cff47">
+      <profileInstance Id="47f403e6-51f3-4ccd-9a58-42016d542e21" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="3802e2a5-8a9e-4f69-897a-e024f5b37474" name="Company" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="271cab05-af0f-4cc0-8f72-3b447f8b062f" />
+        <targetEnds>
+          <association Id="6d9a880f-fd6f-4213-a28c-a5768d87b9ba" isDerived="false" sourceEndRoleName="Company" targetEndRoleName="Sign Up" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7f90d553-799d-4c7e-9754-d44480bb3a08" LastKnownName="Sign Up" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2fc0de4f-69fb-4554-accf-dab16ebc053d" name="Company" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="b90d99c6-a589-459f-86a1-9f9e866d6146" name="Lower" value="1">
+                      <elementDefinition Id="4036c8b5-58e0-4f57-a1d0-278bdcd2bbd3" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="28858041-1fee-4083-a2e0-b2296dea560a" name="Upper" value="*">
+                      <elementDefinition Id="749f3535-dea5-4b73-83a1-22266929a4f4" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="061d9c4f-6267-4a8c-b7fd-8f8e86480b0b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9179c753-09eb-409e-a854-a1ce041911de" name="Sign Up" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="e7e0bc31-4fdb-4257-aad7-da03c66fef09" name="Lower" value="*">
+                      <elementDefinition Id="f6fa2846-acbe-4d1f-ba54-ddd86f533446" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a2bbf933-eef0-4f61-a54e-a34f2aea2874" name="Upper" value="*">
+                      <elementDefinition Id="bb556bdf-5b1f-4edc-973b-8cee6faa6048" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="391f3841-d241-4f9d-8d3f-9aaa0276538b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b3cb9c0e-a8e6-45f9-a1e2-568a6f95286f" />
+          </association>
+          <association Id="bc2f2ce2-405d-4195-84d1-e52fa641b39e" isDerived="false" sourceEndRoleName="Company" targetEndRoleName="Sign In" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="29ca02d4-5120-48ea-bb56-734e6a196023" LastKnownName="Log-in" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8b0d2825-4345-4aa9-bd7f-ba7bf5662d48" name="Company" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="98748ece-c3dd-49f5-8e73-b79aad7f1393" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="15c5add5-7951-4ad2-a236-2a06642e5772" name="Sign In" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="86202a81-26b1-4c78-9dcf-f8e9f66f77a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c3c670b0-a5ea-405b-b3e4-06dd276a4e56" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7f90d553-799d-4c7e-9754-d44480bb3a08" name="Sign Up" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d945fccd-4a6e-4272-8be4-385309852224" />
+        <extendedCases>
+          <extend Id="c5a3afcb-d711-4659-b4a8-501bf7391997">
+            <useCaseMoniker Id="29ca02d4-5120-48ea-bb56-734e6a196023" LastKnownName="Log-in" />
+            <elementDefinition Id="3b0330ed-f170-4356-a660-b4a117c9efad" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="29ca02d4-5120-48ea-bb56-734e6a196023" name="Log-in" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="df8bb5ec-1c6e-4933-bb0d-7f5092bd2eed" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="614cf959-42f8-45a6-a623-404d3dd35a04" name="Import        Company    Customers DB" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="04d62d04-e4ac-4ab0-b460-550320906505" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8988623c-bdcd-4655-9988-92c24ce960b8" name="Analyze  Twieets" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dd247f76-1781-4704-a02e-f1679cff05e9" />
+        <extendedCases>
+          <extend Id="79257dc9-0d01-4071-ac62-2e763d8f255c">
+            <useCaseMoniker Id="29ca02d4-5120-48ea-bb56-734e6a196023" LastKnownName="Log-in" />
+            <elementDefinition Id="331c2e9e-c7c6-44fb-a2c6-c79791f3cd72" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="84664e72-3c20-460c-9c26-73d7249ec94b" name="Display Company Folowers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bac63309-94b8-49b7-b5fc-8234b7ed8f4e" />
+        <generalsInternal>
+          <generalization Id="e9360153-ac1c-4a6e-a6f5-3dc8f49110de" isSubstitutable="false">
+            <useCaseMoniker Id="8988623c-bdcd-4655-9988-92c24ce960b8" LastKnownName="Analyze  Twieets" />
+            <elementDefinition Id="6f1cdddb-b461-44b7-8341-07fab6d0f417" />
+          </generalization>
+        </generalsInternal>
+        <additions>
+          <include Id="59abfcd0-23b4-40e2-ad8c-d3110c577119">
+            <useCaseMoniker Id="614cf959-42f8-45a6-a623-404d3dd35a04" LastKnownName="Import        Company    Customers DB" />
+            <elementDefinition Id="9cda7047-5b1e-4ff0-8fac-e1864a571981" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b0795c04-84d0-4535-a02c-3ed9a889d237" name="Analyze User Tweets" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c3e665ed-a001-4bcb-a87f-6ab0ee56a95c" />
+        <extendedCases>
+          <extend Id="798ebb85-32bf-47c0-9c05-89873e927555">
+            <useCaseMoniker Id="84664e72-3c20-460c-9c26-73d7249ec94b" LastKnownName="Display Company Folowers" />
+            <elementDefinition Id="3eba1270-b129-414d-a7d0-994114c83c0b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ac827ce1-c7da-42ab-aa7f-9333fcacb494" name="Build Live Tweets          Stream" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4794e19d-3cff-466b-b725-b4c78d0ee21b" />
+        <generalsInternal>
+          <generalization Id="adb68213-e39c-41f3-97c2-022b21b7f615" isSubstitutable="false">
+            <useCaseMoniker Id="8988623c-bdcd-4655-9988-92c24ce960b8" LastKnownName="Analyze  Twieets" />
+            <elementDefinition Id="a689d560-43ec-4ec5-bc74-302633c6da84" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0fc304b0-2de7-4869-9938-0d22e51d8b05" name="Add Target Audience Age" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aac6b6e2-2db2-4a49-a553-a027fa3b35c9" />
+        <extendedCases>
+          <extend Id="b902b7aa-cf4b-472a-b908-74bc07fb5026">
+            <useCaseMoniker Id="ac827ce1-c7da-42ab-aa7f-9333fcacb494" LastKnownName="Build Live Tweets          Stream" />
+            <elementDefinition Id="6a80384f-684c-4525-99fe-ccc5ee4623d1" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6d09c689-da4a-46e2-8a79-a40d051696ab" name="Add Target Audience Location" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ff03d531-a7d0-40cd-b3ac-bb18bf707e11" />
+        <extendedCases>
+          <extend Id="36cf4657-e26e-4530-9f9b-1963574ab692">
+            <useCaseMoniker Id="ac827ce1-c7da-42ab-aa7f-9333fcacb494" LastKnownName="Build Live Tweets          Stream" />
+            <elementDefinition Id="f0aeb1ba-aed8-458c-b344-8406ee9a8a49" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="55bf1fc3-c8ac-4b5a-b468-9d69f775a6c0" name="Add TA Gender" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="25ee974a-d807-4bf4-8b6a-1e4aa121d6da" />
+        <extendedCases>
+          <extend Id="e1241940-ad27-4280-876c-bb25a1879b64">
+            <useCaseMoniker Id="ac827ce1-c7da-42ab-aa7f-9333fcacb494" LastKnownName="Build Live Tweets          Stream" />
+            <elementDefinition Id="1da239f8-01b7-4d8e-a860-ee590c54b28a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ba7c0ee1-037a-4807-a470-cd6d912f501f" name="Add TA Language" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b188fcbf-7b2b-4166-a7b1-cf591d2c13f6" />
+        <extendedCases>
+          <extend Id="a473fb5a-1983-43b1-aad0-dd968f454d14">
+            <useCaseMoniker Id="ac827ce1-c7da-42ab-aa7f-9333fcacb494" LastKnownName="Build Live Tweets          Stream" />
+            <elementDefinition Id="7f853452-daa7-4fbb-ab14-d27a494d0ce7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="256fa137-7692-495b-b3b2-4a4364e96169" name="Log out" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="71e7ba6b-d5c3-4938-88c9-baae424c530d" />
+        <extendedCases>
+          <extend Id="539035cf-21df-4daa-8ccc-802674935fe3">
+            <useCaseMoniker Id="29ca02d4-5120-48ea-bb56-734e6a196023" LastKnownName="Log-in" />
+            <elementDefinition Id="cbdea33c-0eab-4fa9-bec8-f143b72df386" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a22de209-ea9b-4306-8e7c-67aec4978ec9" name="Add Keywords" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="969e6a09-e2cc-40c5-b1f6-d95648cfe4f0" />
+        <extendedCases>
+          <extend Id="7cd80718-c14e-407c-9564-5e00e1e13855">
+            <useCaseMoniker Id="ac827ce1-c7da-42ab-aa7f-9333fcacb494" LastKnownName="Build Live Tweets          Stream" />
+            <elementDefinition Id="e51c55d3-23ae-4171-b7fa-c9589bfde894" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="25542022-10d3-45f2-8a2c-471470da18f4" name="Add Target Industry" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="32fc1138-acfc-44d8-8461-7e960188aca5" />
+        <extendedCases>
+          <extend Id="b01e664a-552e-4add-97b0-9e4cd54decaa">
+            <useCaseMoniker Id="ac827ce1-c7da-42ab-aa7f-9333fcacb494" LastKnownName="Build Live Tweets          Stream" />
+            <elementDefinition Id="9bb36ca7-6108-4652-bae0-d1206e8b8835" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c193e039-260b-4cb6-a5be-f2dd074070d5" name="Manage Profile" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3e6d5c3-60ae-4edc-8c36-d1accd72a8bf" />
+        <extendedCases>
+          <extend Id="6f15c917-aaef-42f9-a047-bd1790cc93ad">
+            <useCaseMoniker Id="29ca02d4-5120-48ea-bb56-734e6a196023" LastKnownName="Log-in" />
+            <elementDefinition Id="4a8b3146-7570-47ec-bc73-5df2dcd0fea7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="391c71fe-836f-4fa4-9416-8b62a78f4cdf" name="View Customers DB" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="087d36e9-36fc-4a1b-8ec2-5f425a5e660a" />
+        <extendedCases>
+          <extend Id="4ed5f449-854f-4ea0-9cf3-55cc68d64e1e">
+            <useCaseMoniker Id="c193e039-260b-4cb6-a5be-f2dd074070d5" LastKnownName="Manage Profile" />
+            <elementDefinition Id="dade97dc-48fd-4f05-9f5c-d39de511d4e8" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="93908067-7784-4090-a918-278e417fbfe0" name="Save Stream" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1e220a3f-5236-4194-a37a-d0bcc033c10a" />
+        <extendedCases>
+          <extend Id="4097c86f-af6d-4bf1-9b47-792f8d209e8a">
+            <useCaseMoniker Id="ac827ce1-c7da-42ab-aa7f-9333fcacb494" LastKnownName="Build Live Tweets          Stream" />
+            <elementDefinition Id="0e9e20a9-ab06-4e16-a1b5-2575881e36e9" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="be0fa7bd-5b4a-4577-84fb-beba4cc32d66" name="Export DB" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cb3c3254-e8bc-4ae8-bd22-f80ddc7c731b" />
+        <extendedCases>
+          <extend Id="5cc7d87f-b140-4a2e-8f4f-fba261712349">
+            <useCaseMoniker Id="c193e039-260b-4cb6-a5be-f2dd074070d5" LastKnownName="Manage Profile" />
+            <elementDefinition Id="dff35c4e-b8bf-4f04-a0ea-5e689dfece70" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="14cbf115-753b-4388-a0ce-a9ea78bdd4f1" name="View Saved Streams" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cae00e80-2d10-42a4-b3f6-708718c279c1" />
+        <extendedCases>
+          <extend Id="8fe093f9-7a43-4698-ab59-fff52f1bb19d">
+            <useCaseMoniker Id="c193e039-260b-4cb6-a5be-f2dd074070d5" LastKnownName="Manage Profile" />
+            <elementDefinition Id="39847aa6-5429-4db0-9039-205e0e9b11b7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5bd7cd01-da9d-47fc-ad62-38cd389ad98f" name="Edit Stream" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c60d5319-d692-465c-a537-4d8ff3a3c068" />
+        <extendedCases>
+          <extend Id="5118580a-ad47-4643-82cf-75d04542b7ad">
+            <useCaseMoniker Id="14cbf115-753b-4388-a0ce-a9ea78bdd4f1" LastKnownName="View Saved Streams" />
+            <elementDefinition Id="46c3a5c4-4ebc-4871-aef2-7cb83a220084" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3d88868b-708c-4a1d-8ed8-ccbf30726ed8" name="Delete Stream" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1f598a20-abb5-43a2-8bff-91a91496f4a0" />
+        <extendedCases>
+          <extend Id="2f8948a8-f2b0-4c62-994b-a07ab0d93343">
+            <useCaseMoniker Id="14cbf115-753b-4388-a0ce-a9ea78bdd4f1" LastKnownName="View Saved Streams" />
+            <elementDefinition Id="c9b02589-7fb0-4e4b-bbd9-1ffdad5b4d63" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e9a86a57-0de3-4c4a-b545-0898f4b453d1" name="ModelingProject1">
+    <elementDefinition Id="d3df24b5-5db9-4208-be28-fb1883618888" />
+  </package>
+</useCaseModelRoot>
