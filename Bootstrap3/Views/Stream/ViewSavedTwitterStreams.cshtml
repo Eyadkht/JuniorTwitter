@@ -5,10 +5,11 @@
 }
 <div class="row">
     <div class="col-sm-12">
-        <h4 class="pull-left page-title">View Saved Streams</h4>
+        <h4 class="pull-left page-title">Saved Streams</h4>
         <ol class="breadcrumb pull-right">
-            <li><a href="#">Company 1</a></li>
-            <li><a href="#">View Saved Streams</a></li>
+            <li><a href="#">Moltran</a></li>
+            <li><a href="#">Tables</a></li>
+            <li class="active">Editable Table</li>
         </ol>
     </div>
 </div>
@@ -20,7 +21,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="m-b-30">
-                    <button id="addToTable" class="btn btn-success waves-effect waves-light">Add <i class="fa fa-plus"></i></button>
+                    <a href="@Url.Action("BuildTwitterStream", "Stream")"> Build New Stream</a>
                 </div>
             </div>
         </div>
@@ -28,58 +29,71 @@
             <thead>
                 <tr>
                     <th>Stream Name</th>
-                    <th>Target Industry</th>
+                    <th>Conversation Type</th>
+                    <th>Platform(s)</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="gradeX">
-                    <td>People who need Water</td>
+                    <td>Trident</td>
                     <td>
-                        Need
+                        Internet
+                        Explorer 4.0
                     </td>
-
+                    <td>Win 95+</td>
                     <td class="actions">
                         <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
                         <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
                         <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
                         <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        <a href="#"><i class="fa fa-play"></i></a>
                     </td>
                 </tr>
-
                 <tr class="gradeC">
-                    <td>People from Syria asking about chocolate</td>
+                    <td>Trident</td>
                     <td>
-                        Asking Questions
+                        Internet
+                        Explorer 5.0
                     </td>
-
+                    <td>Win 95+</td>
                     <td class="actions">
                         <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
                         <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
                         <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
                         <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        <a href="#"><i class="fa fa-play"></i></a>
                     </td>
-
                 </tr>
-
                 <tr class="gradeA">
-                    <td>People from Jordan complaining about Network</td>
+                    <td>Trident</td>
                     <td>
-                        Complaining
+                        Internet
+                        Explorer 5.5
                     </td>
-
+                    <td>Win 95+</td>
                     <td class="actions">
                         <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
                         <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
                         <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
                         <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
-                        <a href="#"><i class="fa fa-play"></i></a>
                     </td>
-
                 </tr>
-
+                <tr class="gradeA">
+                    <td>Trident</td>
+                    <td>
+                        Internet
+                        Explorer 6
+                    </td>
+                    <td>Win 98+</td>
+                    <td class="actions">
+                        <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+                        <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+                        <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+                        <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+                    </td>
+                </tr>
+               
             </tbody>
         </table>
     </div>
     </div>
+    <!-- end: page -->

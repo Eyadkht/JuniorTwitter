@@ -20,5 +20,10 @@ namespace Bootstrap3.Controllers
             return View();
 
         }
+
+        public ActionResult AnalyzeCustomer()
+        {
+            return View();
+        }
     }
 }
