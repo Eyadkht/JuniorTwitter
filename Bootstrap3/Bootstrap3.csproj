@@ -201,6 +201,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LiveTweetsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\StatisticsController.cs" />
     <Compile Include="Controllers\StreamController.cs" />
@@ -528,6 +529,7 @@
     <Content Include="Views\Stream\Index.cshtml" />
     <Content Include="Views\Stream\BuildTwitterStream.cshtml" />
     <Content Include="Views\Stream\ViewSavedTwitterStreams.cshtml" />
+    <Content Include="Views\LiveTweets\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
