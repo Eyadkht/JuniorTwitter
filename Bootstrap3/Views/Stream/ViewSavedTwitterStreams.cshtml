@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "ViewSavedTwitterStreams";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-sm-12">
+        <h4 class="pull-left page-title">View Saved Streams</h4>
+        <ol class="breadcrumb pull-right">
+            <li><a href="#">Company 1</a></li>
+            <li><a href="#">View Saved Streams</a></li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="panel">
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="m-b-30">
+                    <button id="addToTable" class="btn btn-success waves-effect waves-light">Add <i class="fa fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered table-striped" id="datatable-editable">
+            <thead>
+                <tr>
+                    <th>Stream Name</th>
+                    <th>Target Industry</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="gradeX">
+                    <td>People who need Water</td>
+                    <td>
+                        Need
+                    </td>
+
+                    <td class="actions">
+                        <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+                        <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+                        <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+                        <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+                        <a href="#"><i class="fa fa-play"></i></a>
+                    </td>
+                </tr>
+
+                <tr class="gradeC">
+                    <td>People from Syria asking about chocolate</td>
+                    <td>
+                        Asking Questions
+                    </td>
+
+                    <td class="actions">
+                        <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+                        <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+                        <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+                        <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+                        <a href="#"><i class="fa fa-play"></i></a>
+                    </td>
+
+                </tr>
+
+                <tr class="gradeA">
+                    <td>People from Jordan complaining about Network</td>
+                    <td>
+                        Complaining
+                    </td>
+
+                    <td class="actions">
+                        <a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+                        <a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+                        <a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+                        <a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+                        <a href="#"><i class="fa fa-play"></i></a>
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    </div>

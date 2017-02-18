@@ -203,6 +203,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\StatisticsController.cs" />
+    <Compile Include="Controllers\StreamController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -524,6 +525,9 @@
     <Content Include="Views\Shared\_LeftSideBar.cshtml" />
     <Content Include="Views\Shared\_RightSideBar.cshtml" />
     <Content Include="Views\Statistics\Index.cshtml" />
+    <Content Include="Views\Stream\Index.cshtml" />
+    <Content Include="Views\Stream\BuildTwitterStream.cshtml" />
+    <Content Include="Views\Stream\ViewSavedTwitterStreams.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
