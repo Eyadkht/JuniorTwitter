@@ -17,20 +17,20 @@
         <!--- Divider -->
         <div id="sidebar-menu">
             <ul>
-                <li>
-                    <a href="index.html" class="waves-effect active"><i class="md md-home"></i><span> Dashboard </span></a>
+                <li>                  
+                    <a href="@Url.Action("Index", "Home")" > <i class="md md-home"></i><span> Dashboard </span></a>
                 </li>
 
                 <li class="has_sub">
-                    <a href="#" class="waves-effect"><i class="md md-view-list"></i><span> Twitter Live Streams </span><span class="pull-right"><i class="md md-view-list"></i></span></a>
+                    <a href="@Url.Action("Index", "Stream")" class="waves-effect"><i class="md md-view-list"></i><span> Twitter Live Streams </span><span class="pull-right"><i class="md md-view-list"></i></span></a>
                     <ul class="list-unstyled">
-                        <li><a href="tables.html">Build Stream</a></li>
-                        <li><a href="tables.html">View Saved Streams</a></li>
+                        <li><a href="@Url.Action("BuildTwitterStream", "Stream")">Build Stream</a></li>
+                        <li><a href="@Url.Action("ViewSavedTwitterStreams","Stream")">View Saved Streams</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="#" class="waves-effect"><i class="md md-account-child"></i><span> View All Customers </span><span class="pull-right"><i class="md  md-account-child"></i></span></a>
+                    <a href="@Url.Action("ViewAllCustomers", "Customers")" > <i class="md md-account-child"></i><span> View All Customers </span><span class="pull-right"><i class="md  md-account-child"></i></span></a>
 
                 </li>
 
