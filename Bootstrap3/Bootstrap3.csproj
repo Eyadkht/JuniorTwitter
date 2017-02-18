@@ -525,7 +525,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Shared\_LeftSideBar.cshtml" />
-    <Content Include="Views\Shared\_RightSideBar.cshtml" />
     <Content Include="Views\Statistics\Index.cshtml" />
     <Content Include="Views\Stream\Index.cshtml" />
     <Content Include="Views\Stream\BuildTwitterStream.cshtml" />
