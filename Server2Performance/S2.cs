@@ -28,7 +28,7 @@ namespace Server2Performance
             {
                 HttpChannel chnl = new HttpChannel();
                 ChannelServices.RegisterChannel(chnl, false);
-
+                Console.WriteLine("fdsf");
                 Manger = (IManger)Activator.GetObject(typeof(IManger), remotingUrl + "ServerManger.soap");
             }
         }
